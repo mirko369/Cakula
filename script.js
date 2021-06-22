@@ -435,10 +435,13 @@ const popup = document.querySelector(".table-menu");
 const popupTitle = document.querySelector(".table-name");
 const popupContent = document.querySelector(".popup");
 const popupClose = document.querySelector(".close");
+const slideImg = document.querySelector(".img");
+const specialMen = document.querySelector(".specialMenu");
+let slideCount = 0;
+let specialCount = 1;
 
 drinkslist.addEventListener("click", function (e) {
   const drink = e.target.textContent;
-  console.log(drink);
   let nameDrinks = "";
   if (drink.length > 30) return;
   if (drink === "Warm drinks") nameDrinks = "warmDrinks";
@@ -477,7 +480,50 @@ drinkslist.addEventListener("click", function (e) {
   });
 });
 
+specialMen.addEventListener("click", function (e) {
+  const btn = e.target.textContent;
+  if (btn !== "Cocktails" && btn !== "Gins") return;
+  popupTitle.textContent = btn;
+  popupContent.style.opacity = 1;
+  popupContent.style.zIndex = 1;
+  popup.innerHTML = "";
+  popup.insertAdjacentHTML(
+    "beforeend",
+    `<img class="menuImg" src="imgs/1.jpg">
+    <div class="navigation">
+            <button class="navigationBtn">&#8592;</button>
+            <button class="navigationBtn">&#8594;</button>
+          </div>`
+  );
+  const navigationButtons = document.querySelector(".navigation");
+  const specialImage = document.querySelector(".menuImg");
+  navigationButtons.addEventListener("click", function (e) {
+    const btn = e.target.textContent;
+    if (btn !== "←" && btn !== "→") return;
+    if (btn === "←") specialCount--;
+    if (btn === "→") specialCount++;
+    if (specialCount === 0) specialCount = 4;
+    if (specialCount === 5) specialCount = 1;
+    specialImage.src = `imgs/${specialCount}.jpg`;
+  });
+});
+
 popupClose.addEventListener("click", function () {
   popupContent.style.opacity = 0;
   popupContent.style.zIndex = -1;
 });
+
+const slideShow = function () {
+  if (slideCount === 4) slideCount = 0;
+  slideCount++;
+  slideImg.src = `imgs/${slideCount}.jpg`;
+  slideCounter();
+};
+
+const slideCounter = function () {
+  setTimeout(function () {
+    slideShow();
+  }, 3000);
+};
+
+slideShow();

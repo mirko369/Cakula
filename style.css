@@ -14,11 +14,24 @@ body {
   text-align: center;
 }
 
+.specialMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.specialButton {
+  margin-top: 1rem;
+  font-family: "Times New Roman";
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
 .slide-show {
-  margin-top: 3rem;
   overflow: hidden;
   height: 500px;
-  max-height: 600px;
+  max-height: 500px;
   position: relative;
 }
 
@@ -76,6 +89,25 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.menuImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.navigationBtn {
+  font-family: "Times New Roman";
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
 }
 
 .table-name {
