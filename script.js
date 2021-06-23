@@ -437,6 +437,7 @@ const popupContent = document.querySelector(".popup");
 const popupClose = document.querySelector(".close");
 const slideImg = document.querySelector(".img");
 const specialMen = document.querySelector(".specialMenu");
+const popupSpecial = document.querySelector(".popup-content");
 let slideCount = 0;
 let specialCount = 1;
 
@@ -457,10 +458,13 @@ drinkslist.addEventListener("click", function (e) {
   if (drink === "Domestic alcohol drinks") nameDrinks = "domesticAlcohol";
   if (drink === "Imported alcohol drinks") nameDrinks = "importedAlcohol";
   if (drink === "Mixed drinks") nameDrinks = "mixedDrinks";
+  if (drink === "Sweets") nameDrinks = "sweets";
 
   popupTitle.textContent = drink;
   popupContent.style.opacity = 1;
   popupContent.style.zIndex = 1;
+  popupSpecial.style.backgroundColor = "#fefefe";
+  popupSpecial.style.color = "black";
 
   popup.innerHTML = "";
   drinks[nameDrinks].name.forEach((el, pos) => {
@@ -487,6 +491,8 @@ specialMen.addEventListener("click", function (e) {
   popupContent.style.opacity = 1;
   popupContent.style.zIndex = 1;
   popup.innerHTML = "";
+  popupSpecial.style.backgroundColor = "#9e7f6a";
+  popupSpecial.style.color = "white";
   popup.insertAdjacentHTML(
     "beforeend",
     `<img class="menuImg" src="imgs/1.jpg">
@@ -514,7 +520,7 @@ popupClose.addEventListener("click", function () {
 });
 
 const slideShow = function () {
-  if (slideCount === 4) slideCount = 0;
+  if (slideCount === 10) slideCount = 0;
   slideCount++;
   slideImg.src = `imgs/${slideCount}.jpg`;
   slideCounter();

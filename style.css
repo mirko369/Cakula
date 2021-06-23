@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(179, 131, 69);
-  color: white;
+  background-color: rgb(190, 149, 95);
+  color: rgb(231, 228, 219);
   font-family: "Times New Roman";
 }
 
@@ -10,13 +10,15 @@ body {
 }
 
 .caffe-name {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .specialMenu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .specialButton {
@@ -25,13 +27,14 @@ body {
   color: white;
   background-color: transparent;
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
 .slide-show {
   overflow: hidden;
-  height: 500px;
-  max-height: 500px;
+  height: 400px;
+  max-height: 400px;
   position: relative;
 }
 
@@ -41,6 +44,18 @@ body {
   height: auto;
   position: absolute;
   bottom: 0;
+}
+
+.message {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.specialText {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 3rem;
 }
 
 .menu-name {
