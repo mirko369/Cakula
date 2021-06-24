@@ -430,6 +430,177 @@ const drinks = {
   },
 };
 
+const specialDrinks = {
+  cocktails: {
+    name: [
+      "Pina Colada",
+      "Cosmopolitan",
+      "Cuba Libre",
+      "Mojito",
+      "Mojito 1L",
+      "Mojito Strawberry",
+      "Mojito Blueberry",
+      "Long Beach Ice Tea",
+      "Margarita",
+      "Long Island Ice Tea",
+      "Tequila Sunrise",
+      "Sex On The Beach",
+      "Sex On The Beach 1L",
+      "Blue Lagoon",
+      "Blue Hawaiian",
+      "Caipirinha",
+      "White Russian",
+      "Aperol Spritz",
+      "Caribbean Cruise",
+      "Caribbean Cruise 1L",
+      "Mai Tai",
+      "Zombie",
+      "Bahama Mama",
+      "Bahama Mama 1L",
+      "Little Engineer",
+      "Simply Red",
+    ],
+    description: [
+      ["white rum, dark rum, coconut cream, pineapple juice, cream"],
+      ["vodka, triple sec, fresh lime, cranberry juice"],
+      ["white rum, fresh lime, coca cola"],
+      ["white rum, fresh lime, sugar, mint leaves, mineral water"],
+      ["white rum, fresh lime, sugar, mint leaves, mineral water"],
+      ["white rum, fresh lime, strawberry, sugar, mint leaves, mineral water"],
+      ["white rum, fresh lime, blueberry, sugar, mint leaves, mineral water"],
+      ["vodka, gin, white rum, tequila, triple sec, coca cola, fresh lemon"],
+      ["tequila, triple sec, lime juice"][
+        "tequila, lime juice, orange juice, grenadine"
+      ],
+      ["vodka, peach liqueur, orange juice, cranberry juice"],
+      ["vodka, peach liqueur, orange juice, cranberry juice"],
+      ["vodka, blue curacao, lime juice, sprite"],
+      [
+        `white rum,
+        dark rum,
+        blue curacao,
+        pineapple juice,
+        orange juice`,
+      ],
+      ["cachaca, brown sugar, lime"],
+      ["vodka, coffe liqueur, cream"],
+      ["aperol, sparkling wine, soda water"],
+      [
+        `white rum,
+        vodka,
+        malibu,
+        grenadine,
+        pineapple juice,
+        lime juice,
+        orange juice`,
+      ],
+      [
+        `white rum,
+        vodka,
+        malibu,
+        grenadine,
+        pineapple juice,
+        lime juice,
+        orange juice`,
+      ],
+      [
+        `white rum,
+        dark rum,
+        apricot liqueur,
+        almond syrup,
+        lime juice,
+        orange juice`,
+      ],
+      [
+        `white rum,
+        dark rum,
+        stroch 80%,
+        cherry brandy,
+        grenadine,
+        fresh lemon juice,
+        orange juice`,
+      ],
+      [
+        `stroch 80%,
+        dark rum,
+        malibu,
+        kahlua,
+        fresh lemon juice,
+        pineapple juice`,
+      ],
+      [
+        `stroch 80%,
+        dark rum,
+        malibu,
+        kahlua,
+        fresh lemon juice,
+        pineapple juice`,
+      ],
+      ["grenadine, lime juice, pineapple juice, orange juice"],
+      [
+        `coconut cream,
+        grenadine,
+        lime juice,
+        pineapple juice,
+        orange juice`,
+      ],
+    ],
+    price: [
+      "60,00 kn",
+      "55,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "130,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "70,00 kn",
+      "55,00 kn",
+      "70,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "130,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "60,00 kn",
+      "55,00 kn",
+      "70,00 kn",
+      "130,00 kn",
+      "70,00 kn",
+      "70,00 kn",
+      "70,00 kn",
+      "140,00 kn",
+      "50,00 kn",
+      "50,00 kn",
+    ],
+  },
+
+  gins: {
+    name: [
+      "Monkey 47 0,03 l",
+      "Tanqueray 0,03 l",
+      "Hendrick's 0,03 l",
+      "Gin Mare 0,03 l",
+      "Tanqueray No. 10 0,03 l",
+      "Bombay Sapphire 0,03 l",
+      "1724 Tonic water 0,02 l",
+      "Thomas Henry tonic water 0,02 l",
+      "Thomas Henry Cherry Blossom tonic 0,02 l",
+    ],
+    price: [
+      "45,00 kn",
+      "25,00 kn",
+      "35,00 kn",
+      "45,00 kn",
+      "35,00 kn",
+      "25,00 kn",
+      "30,00 kn",
+      "25,00 kn",
+      "25,00 kn",
+    ],
+  },
+};
+
 const drinkslist = document.querySelector(".btn-group");
 const popup = document.querySelector(".table-menu");
 const popupTitle = document.querySelector(".table-name");
@@ -439,7 +610,7 @@ const slideImg = document.querySelector(".img");
 const specialMen = document.querySelector(".specialMenu");
 const popupSpecial = document.querySelector(".popup-content");
 let slideCount = 0;
-let specialCount = 1;
+let specialCount = 0;
 
 drinkslist.addEventListener("click", function (e) {
   const drink = e.target.textContent;
@@ -493,30 +664,67 @@ specialMen.addEventListener("click", function (e) {
   popup.innerHTML = "";
   popupSpecial.style.backgroundColor = "#9e7f6a";
   popupSpecial.style.color = "white";
-  popup.insertAdjacentHTML(
-    "beforeend",
-    `<img class="menuImg" src="imgs/1.jpg">
+  if (btn === "Cocktails") {
+    popup.insertAdjacentHTML(
+      "beforeend",
+      `<img class="menuImg" src="imgs/1.jpg">
+    <p class="specialName">Pina Colada<p>
+    <p ${
+      btn === "Cocktails"
+        ? 'class="specialDescription"'
+        : 'class="specialMeasure"'
+    } >white rum, dark rum, coconut cream, pineapple juice, cream<p>
+    <p class="specialPrice">60,00 kn<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
             <button class="navigationBtn">&#8594;</button>
           </div>`
-  );
+    );
+  }
+  if (btn === "Gins") {
+    popup.insertAdjacentHTML(
+      "beforeend",
+      `<img class="menuImg" src="imgs/1.jpg">
+      <p class="specialName">Monkey 47 0,03 l<p>
+      <p class="specialPrice">45,00 kn<p>
+      <div class="navigation">
+              <button class="navigationBtn">&#8592;</button>
+              <button class="navigationBtn">&#8594;</button>
+            </div>`
+    );
+  }
+  let categorybtn = "";
   const navigationButtons = document.querySelector(".navigation");
   const specialImage = document.querySelector(".menuImg");
+  const specialNam = document.querySelector(".specialName");
+  const specialDesc = document.querySelector(".specialDescription");
+  const specialPri = document.querySelector(".specialPrice");
+  if (btn === "Cocktails") categorybtn = "cocktails";
+  if (btn === "Gins") categorybtn = "gins";
   navigationButtons.addEventListener("click", function (e) {
     const btn = e.target.textContent;
     if (btn !== "←" && btn !== "→") return;
     if (btn === "←") specialCount--;
     if (btn === "→") specialCount++;
-    if (specialCount === 0) specialCount = 4;
-    if (specialCount === 5) specialCount = 1;
+    if (specialCount === -1) specialCount = 9;
+    else if (specialCount === 10) specialCount = 0;
+    console.log(specialCount);
     specialImage.src = `imgs/${specialCount}.jpg`;
+    specialNam.textContent = specialDrinks[categorybtn].name[specialCount];
+    if (categorybtn === "cocktails")
+      specialDesc.textContent =
+        specialDrinks[categorybtn].description[specialCount];
+
+    // if (categorybtn === "gins")
+    //   specialMes.textContent = specialDrinks[categorybtn].measure[specialCount];
+    specialPri.textContent = specialDrinks[categorybtn].price[specialCount];
   });
 });
 
 popupClose.addEventListener("click", function () {
   popupContent.style.opacity = 0;
   popupContent.style.zIndex = -1;
+  specialCount = 0;
 });
 
 const slideShow = function () {
