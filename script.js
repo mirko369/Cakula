@@ -468,10 +468,10 @@ const specialDrinks = {
       ["white rum, fresh lime, sugar, mint leaves, mineral water"],
       ["white rum, fresh lime, strawberry, sugar, mint leaves, mineral water"],
       ["white rum, fresh lime, blueberry, sugar, mint leaves, mineral water"],
+      ["vodka, gin, white rum, tequila, triple sec, cranberry juice"],
+      ["tequila, triple sec, lime juice"],
       ["vodka, gin, white rum, tequila, triple sec, coca cola, fresh lemon"],
-      ["tequila, triple sec, lime juice"][
-        "tequila, lime juice, orange juice, grenadine"
-      ],
+      ["tequila, lime juice, orange juice, grenadine"],
       ["vodka, peach liqueur, orange juice, cranberry juice"],
       ["vodka, peach liqueur, orange juice, cranberry juice"],
       ["vodka, blue curacao, lime juice, sprite"],
@@ -577,15 +577,26 @@ const specialDrinks = {
 
   gins: {
     name: [
-      "Monkey 47 0,03 l",
-      "Tanqueray 0,03 l",
-      "Hendrick's 0,03 l",
-      "Gin Mare 0,03 l",
-      "Tanqueray No. 10 0,03 l",
-      "Bombay Sapphire 0,03 l",
-      "1724 Tonic water 0,02 l",
-      "Thomas Henry tonic water 0,02 l",
-      "Thomas Henry Cherry Blossom tonic 0,02 l",
+      "Monkey 47",
+      "Tanqueray",
+      "Hendrick's",
+      "Gin Mare",
+      "Tanqueray No. 10",
+      "Bombay Sapphire",
+      "1724 Tonic water",
+      "Thomas Henry tonic water",
+      "Thomas Henry Cherry Blossom tonic",
+    ],
+    measure: [
+      "0,03 l",
+      "0,03 l",
+      "0,03 l",
+      "0,03 l",
+      "0,03 l",
+      "0,03 l",
+      "0,2 l",
+      "0,2 l",
+      "0,2 l",
     ],
     price: [
       "45,00 kn",
@@ -667,13 +678,9 @@ specialMen.addEventListener("click", function (e) {
   if (btn === "Cocktails") {
     popup.insertAdjacentHTML(
       "beforeend",
-      `<img class="menuImg" src="imgs/1.jpg">
+      `<img class="menuImg" src="cocktailimgs/0.jpg">
     <p class="specialName">Pina Colada<p>
-    <p ${
-      btn === "Cocktails"
-        ? 'class="specialDescription"'
-        : 'class="specialMeasure"'
-    } >white rum, dark rum, coconut cream, pineapple juice, cream<p>
+    <p class="specialDescription">white rum, dark rum, coconut cream, pineapple juice, cream<p>
     <p class="specialPrice">60,00 kn<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
@@ -684,9 +691,9 @@ specialMen.addEventListener("click", function (e) {
   if (btn === "Gins") {
     popup.insertAdjacentHTML(
       "beforeend",
-      `<img class="menuImg" src="imgs/1.jpg">
-      <p class="specialName">Monkey 47 0,03 l<p>
-      <p class="specialPrice">45,00 kn<p>
+      `<img class="menuImg" src="ginimgs/0.jpg">
+      <p class="specialGinName">Monkey 47 0,03 l<p>
+      <p class="specialGinPrice">45,00 kn<p>
       <div class="navigation">
               <button class="navigationBtn">&#8592;</button>
               <button class="navigationBtn">&#8594;</button>
@@ -699,6 +706,8 @@ specialMen.addEventListener("click", function (e) {
   const specialNam = document.querySelector(".specialName");
   const specialDesc = document.querySelector(".specialDescription");
   const specialPri = document.querySelector(".specialPrice");
+  const specialGinNam = document.querySelector(".specialGinName");
+  const specialGinPri = document.querySelector(".specialGinPrice");
   if (btn === "Cocktails") categorybtn = "cocktails";
   if (btn === "Gins") categorybtn = "gins";
   navigationButtons.addEventListener("click", function (e) {
@@ -706,18 +715,28 @@ specialMen.addEventListener("click", function (e) {
     if (btn !== "←" && btn !== "→") return;
     if (btn === "←") specialCount--;
     if (btn === "→") specialCount++;
-    if (specialCount === -1) specialCount = 9;
-    else if (specialCount === 10) specialCount = 0;
-    console.log(specialCount);
-    specialImage.src = `imgs/${specialCount}.jpg`;
-    specialNam.textContent = specialDrinks[categorybtn].name[specialCount];
-    if (categorybtn === "cocktails")
+    if (categorybtn === "cocktails") {
+      if (specialCount === -1) specialCount = 25;
+      else if (specialCount === 26) specialCount = 0;
+      console.log(specialCount);
+      specialImage.src = `cocktailimgs/${specialCount}.jpg`;
+      specialNam.textContent = specialDrinks[categorybtn].name[specialCount];
       specialDesc.textContent =
         specialDrinks[categorybtn].description[specialCount];
-
-    // if (categorybtn === "gins")
-    //   specialMes.textContent = specialDrinks[categorybtn].measure[specialCount];
-    specialPri.textContent = specialDrinks[categorybtn].price[specialCount];
+      specialPri.textContent = specialDrinks[categorybtn].price[specialCount];
+    }
+    if (categorybtn === "gins") {
+      if (specialCount === -1) specialCount = 8;
+      else if (specialCount === 9) specialCount = 0;
+      console.log(specialCount);
+      specialImage.src = `ginimgs/${specialCount}.jpg`;
+      specialGinNam.textContent = `${
+        specialDrinks[categorybtn].name[specialCount]
+      } ${(specialGinNam.innerHTML.textContent =
+        specialDrinks[categorybtn].measure[specialCount])}`;
+      specialGinPri.textContent =
+        specialDrinks[categorybtn].price[specialCount];
+    }
   });
 });
 

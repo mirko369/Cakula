@@ -22,7 +22,7 @@ body {
 }
 
 .specialName {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -32,8 +32,20 @@ body {
 
 .specialPrice {
   margin-top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: right;
+}
+
+.specialGins {
+  margin-top: 1rem;
+}
+
+.specialGinName {
+  font-size: 2rem;
+}
+
+.specialGinPrice {
+  font-size: 2rem;
 }
 
 .specialButton {
@@ -122,8 +134,11 @@ body {
 }
 
 .menuImg {
-  max-width: 100%;
-  max-height: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+  max-height: 500px;
+  height: 50%;
+  width: 100%;
 }
 
 .navigation {
