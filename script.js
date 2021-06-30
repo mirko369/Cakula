@@ -718,8 +718,15 @@ specialMen.addEventListener("click", function (e) {
     if (categorybtn === "cocktails") {
       if (specialCount === -1) specialCount = 25;
       else if (specialCount === 26) specialCount = 0;
-      console.log(specialCount);
       specialImage.src = `cocktailimgs/${specialCount}.jpg`;
+      if (
+        specialCount === 4 ||
+        specialCount === 12 ||
+        specialCount === 19 ||
+        specialCount === 23
+      )
+        specialImage.src = "";
+
       specialNam.textContent = specialDrinks[categorybtn].name[specialCount];
       specialDesc.textContent =
         specialDrinks[categorybtn].description[specialCount];
@@ -728,7 +735,6 @@ specialMen.addEventListener("click", function (e) {
     if (categorybtn === "gins") {
       if (specialCount === -1) specialCount = 8;
       else if (specialCount === 9) specialCount = 0;
-      console.log(specialCount);
       specialImage.src = `ginimgs/${specialCount}.jpg`;
       specialGinNam.textContent = `${
         specialDrinks[categorybtn].name[specialCount]

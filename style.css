@@ -49,7 +49,6 @@ body {
 }
 
 .specialButton {
-  /* margin-top: 1rem; */
   font-family: "Times New Roman";
   color: white;
   background-color: transparent;
@@ -172,11 +171,4 @@ td {
   float: right;
   font-size: 30px;
   font-weight: bold;
-}
-
-.end {
-  margin-top: 5rem;
-  height: 5rem;
-  width: 100%;
-  background-color: rgb(61, 42, 7);
 }
