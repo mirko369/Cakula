@@ -681,7 +681,7 @@ specialMen.addEventListener("click", function (e) {
       `<img class="menuImg" src="cocktailimgs/0.jpg">
     <p class="specialName">Pina Colada<p>
     <p class="specialDescription">white rum, dark rum, coconut cream, pineapple juice, cream<p>
-    <p class="specialPrice">60,00 kn<p>
+    <p class="specialPrice">65,00 kn<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
             <button class="navigationBtn">&#8594;</button>
