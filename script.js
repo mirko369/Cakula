@@ -418,11 +418,12 @@ const drinks = {
     name: [
       "Frappe Milkshake",
       "Ledeni sok (slushy)",
+      "Ledeni sok (slushy)",
       "Ledeni sok + čaša (slushy + cup)",
       "Ledeni sok + čaša (slushy + cup)",
     ],
     measure: ["0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"],
-    price: ["30,00 kn", "22,00 kn", "28,00 kn"],
+    price: ["30,00 kn", "22,00 kn", "28,00 kn","45,00 kn","55,00 kn"],
   },
   sweets: {
     name: [
