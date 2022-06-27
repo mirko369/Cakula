@@ -423,7 +423,7 @@ const drinks = {
       "Ledeni sok + čaša (slushy + cup)",
     ],
     measure: ["0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"],
-    price: ["30,00 kn", "22,00 kn", "28,00 kn","45,00 kn","55,00 kn"],
+    price: ["30,00 kn", "25,00 kn", "35,00 kn", "45,00 kn", "55,00 kn"],
   },
   sweets: {
     name: [
@@ -553,7 +553,7 @@ const specialDrinks = {
     ],
     price: [
       "65,00 kn",
-      "50,00 kn",
+      "55,00 kn",
       "65,00 kn",
       "65,00 kn",
       "140,00 kn",
