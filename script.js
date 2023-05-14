@@ -756,8 +756,8 @@ specialMen.addEventListener("click", function (e) {
     if (btn === "←") specialCount--;
     if (btn === "→") specialCount++;
     if (categorybtn === "cocktails") {
-      if (specialCount === -1) specialCount = 25;
-      else if (specialCount === 26) specialCount = 0;
+      if (specialCount === -1) specialCount = 28;
+      else if (specialCount === 29) specialCount = 0;
       specialImage.src = `cocktailimgs/${specialCount}.jpg`;
       if (
         specialCount === 4 ||
