@@ -721,7 +721,7 @@ specialMen.addEventListener("click", function (e) {
       `<img class="menuImg" src="cocktailimgs/0.jpg">
     <p class="specialName">Pina Colada<p>
     <p class="specialDescription">white rum, dark rum, coconut cream, pineapple juice, cream<p>
-    <p class="specialPrice">65,00 kn / 8,63 Є<p>
+    <p class="specialPrice">75,00 kn / 10,00 Є<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
             <button class="navigationBtn">&#8594;</button>
@@ -733,7 +733,7 @@ specialMen.addEventListener("click", function (e) {
       "beforeend",
       `<img class="menuImg" src="ginimgs/0.jpg">
       <p class="specialGinName">Monkey 47 0,03 l<p>
-      <p class="specialGinPrice">45,00 kn / 5,97 Є<p>
+      <p class="specialGinPrice">53,00 kn / 7,00 Є<p>
       <div class="navigation">
               <button class="navigationBtn">&#8592;</button>
               <button class="navigationBtn">&#8594;</button>
