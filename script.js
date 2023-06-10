@@ -457,7 +457,7 @@ const drinks = {
       "Slatki kornet / Sweet Cone",
     ],
     measure: ["kugla/ball", "kugla/ball", "komad/piece"],
-    price: ["2,00 Є / 15,07 kn", "2,50 Є / 18,84 kn", "0,50 Є / 3,77 kn"],
+    price: ["2,20 Є / 16,58 kn", "2,60 Є / 19,59 kn", "0,80 Є / 6,03 kn"],
   },
 };
 
