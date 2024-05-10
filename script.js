@@ -35,16 +35,16 @@ const drinks = {
       "0,355 l",
     ],
     price: [
-      "3,00 Є",
-      "4,50 Є",
+      "2,70 Є",
+      "4,20 Є",
+      "5,20 Є",
+      "4,20 Є",
+      "5,20 Є",
+      "5,20 Є",
+      "5,20 Є",
       "5,50 Є",
-      "4,50 Є",
-      "5,50 Є",
-      "5,50 Є",
-      "5,50 Є",
-      "5,50 Є",
-      "5,50 Є",
-      "4,50 Є",
+      "4,20 Є",
+      "5,20 Є",
       "4,60 Є",
       "4,50 Є",
       "6,50 Є",
@@ -303,26 +303,26 @@ const drinks = {
     ],
     price: [
       "6,50 Є",
-      "5,00 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,50 Є",
-      "4,00 Є",
-      "3,00 Є",
+      "4,80 Є",
       "4,30 Є",
-      "3,00 Є",
-      "5,60 Є",
-      "3,10 Є",
-      "2,90 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "4,30 Є",
+      "3,80 Є",
+      "2,80 Є",
+      "4,10 Є",
+      "2,80 Є",
       "5,40 Є",
+      "2,90 Є",
+      "2,70 Є",
+      "5,20 Є",
       "5,50 Є",
       "7,00 Є",
-      "8,00 Є",
+      "6,50 Є",
     ],
   },
   // freshSqueezedJuices: {
@@ -430,7 +430,7 @@ const drinks = {
       "3,00 Є",
       "3,10 Є",
       "7,00 Є",
-      "3,40 Є",
+      "3,00 Є",
       "2,00 Є",
       "7,00 Є",
       "2,00 Є",
@@ -446,13 +446,11 @@ const drinks = {
       "Ledeni sok + čaša (slushy + cup)",
       "Ledeni sok + čaša (slushy + cup)",
     ],
-    measure: ["5,00 Є", "5,00 Є", "6,00 Є", "8,50 Є", "10,00 Є"],
+    measure: [
+      "0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"
+    ],
     price: [
-      "4,50 Є / 33,91 kn",
-      "4,00 Є / 30,41 kn",
-      "5,50 Є / 41,44 kn",
-      "7,00 Є / 52,74 kn",
-      "8,50 Є / 64,04 kn",
+      "5,00 Є", "5,00 Є", "6,00 Є", "8,50 Є", "10,00 Є"
     ],
   },
   sweets: {
@@ -727,7 +725,7 @@ specialMen.addEventListener("click", function (e) {
       `<img class="menuImg" src="cocktailimgs/0.jpg">
     <p class="specialName">Pina Colada<p>
     <p class="specialDescription">white rum, dark rum, coconut cream, pineapple juice, cream<p>
-    <p class="specialPrice">75,35 kn / 10,00 Є<p>
+    <p class="specialPrice">11,50 Є<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
             <button class="navigationBtn">&#8594;</button>
@@ -739,7 +737,7 @@ specialMen.addEventListener("click", function (e) {
       "beforeend",
       `<img class="menuImg" src="ginimgs/0.jpg">
       <p class="specialGinName">Monkey 47 0,03 l<p>
-      <p class="specialGinPrice">52,74 kn / 7,00 Є<p>
+      <p class="specialGinPrice">8,00 Є<p>
       <div class="navigation">
               <button class="navigationBtn">&#8592;</button>
               <button class="navigationBtn">&#8594;</button>
