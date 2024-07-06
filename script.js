@@ -440,6 +440,7 @@ const drinks = {
   },
   coldDrinks: {
     name: [
+      "Bubble Tea",
       "Frappe Milkshake",
       "Ledeni sok (slushy)",
       "Ledeni sok (slushy)",
@@ -447,10 +448,10 @@ const drinks = {
       "Ledeni sok + čaša (slushy + cup)",
     ],
     measure: [
-      "0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"
+      "0,36 l","0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"
     ],
     price: [
-      "5,00 Є", "5,00 Є", "6,50 Є", "8,50 Є", "10,00 Є"
+      "6,00 Є","5,00 Є", "5,00 Є", "6,50 Є", "8,50 Є", "10,00 Є"
     ],
   },
   sweets: {
