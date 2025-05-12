@@ -36,18 +36,18 @@ const drinks = {
     ],
     price: [
       "2,70 Є",
-      "4,20 Є",
-      "5,20 Є",
-      "4,20 Є",
-      "5,20 Є",
-      "5,20 Є",
-      "5,20 Є",
+      "4,40 Є",
+      "5,40 Є",
+      "4,40 Є",
+      "5,40 Є",
+      "5,40 Є",
+      "5,40 Є",
       "5,50 Є",
-      "4,20 Є",
-      "5,20 Є",
+      "4,40 Є",
+      "5,40 Є",
+      "4,70 Є",
       "4,60 Є",
-      "4,50 Є",
-      "6,50 Є",
+      "7,00 Є",
       "7,00 Є",
     ],
   },
@@ -77,16 +77,16 @@ const drinks = {
       "0,187 l",
     ],
     price: [
-      "7,00 Є",
-      "23,00 Є",
-      "7,00 Є",
-      "23,00 Є",
-      "7,00 Є",
-      "23,00 Є",
-      "23,00 Є",
+      "7,50 Є",
+      "25,00 Є",
+      "7,50 Є",
+      "25,00 Є",
+      "7,50 Є",
+      "25,00 Є",
+      "20,00 Є",
+      "48,00 Є",
       "45,00 Є",
-      "40,00 Є",
-      "7,00 Є",
+      "7,50 Є",
     ],
   },
   sparklingWine: {
@@ -99,11 +99,11 @@ const drinks = {
     ],
     measure: ["0,20 l", "0,75 l", "0,75 l", "0,75 l", "1,50 l"],
     price: [
-      "10,00 Є",
-      "65,00 Є",
-      "65,00 Є",
-      "65,00 Є",
-      "150,00 Є",
+      "11,00 Є",
+      "70,00 Є",
+      "70,00 Є",
+      "70,00 Є",
+      "180,00 Є",
     ],
   },
   desertWine: {
@@ -234,20 +234,20 @@ const drinks = {
     price: [
       "6,50 Є",
       "6,50 Є",
-      "5,60 Є",
+      "5,70 Є",
       "6,50 Є",
       "5,60 Є",
       "5,60 Є",
       "6,60 Є",
       "5,60 Є",
+      "7,50 Є",
       "6,80 Є",
-      "6,80 Є",
-      "5,60 Є",
+      "5,70 Є",
       "7,50 Є",
       "5,60 Є",
       "6,80 Є",
       "6,60 Є",
-      "5,30 Є",
+      "5,50 Є",
       "5,30 Є",
       "6,60 Є",
       "6,60 Є",
@@ -276,7 +276,8 @@ const drinks = {
       "Voda negazirana / Natural water",
       "Limunada / lemonade",
       "Narančada / orange",
-      "Svježe cijeđeni sok / Fresh squeezed juice"
+      "Svježe cijeđeni sok / Fresh squeezed juice",
+      "Hydra"
     ],
     measure: [
       "0,275 l",
@@ -299,30 +300,32 @@ const drinks = {
       "0,75 l",
       "0,30 l",
       "0,30 l",
-      "0,30 l"
+      "0,30 l",
+      "0,50 l",
     ],
     price: [
       "6,50 Є",
       "4,80 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "4,30 Є",
-      "3,80 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,60 Є",
+      "4,00 Є",
       "2,80 Є",
-      "4,10 Є",
-      "2,80 Є",
-      "5,40 Є",
+      "4,20 Є",
       "2,90 Є",
-      "2,70 Є",
-      "5,20 Є",
+      "5,70 Є",
+      "3,00 Є",
+      "2,80 Є",
       "5,50 Є",
-      "7,00 Є",
+      "6,00 Є",
+      "7,50 Є",
       "8,00 Є",
+      "4,60 Є",
     ],
   },
   // freshSqueezedJuices: {
@@ -356,6 +359,8 @@ const drinks = {
       "Kava bez kofeina sa Ledo šlagom / decaffeinated espresso with Ledo Cream (small)",
       "Kava bez kofeina sa šlagom velika / decaffeinated espresso with cream (big)",
       "Kava bez kofeina sa Ledo šlagom velika / decaffeinated espresso with Ledo cream (big)",
+      "Matcha latte",
+      "Iced Matcha latte",
       "Cappucino",
       "Cappucino bez kofeina / Decaffeinated cappucino",
       "Kakao / Cocoa",
@@ -402,37 +407,41 @@ const drinks = {
       "šal.",
       "šal.",
       "šal.",
+      "šal.",
+      "šal.",
       "0,10 l",
       "porcija/portion",
     ],
     price: [
-      "1,70 Є",
       "1,80 Є",
-      "2,10 Є",
-      "1,80 Є",
-      "2,00 Є",
+      "1,90 Є",
+      "2,30 Є",
+      "1,90 Є",
       "2,10 Є",
       "2,20 Є",
-      "2,00 Є",
+      "2,30 Є",
       "2,10 Є",
-      "2,50 Є",
       "2,20 Є",
+      "2,60 Є",
+      "2,30 Є",
+      "2,60 Є",
       "2,50 Є",
-      "2,40 Є",
-      "2,70 Є",
+      "2,80 Є",
+      "5,00 Є",
+      "5,50 Є",
       "5,00 Є",
       "5,50 Є",
       "3,30 Є",
       "4,00 Є",
-      "2,50 Є",
+      "2,60 Є",
       "2,70 Є",
       "6,00 Є",
       "3,00 Є",
       "3,10 Є",
       "7,00 Є",
-      "3,00 Є",
+      "3,50 Є",
       "2,00 Є",
-      "7,00 Є",
+      "7,50 Є",
       "2,00 Є",
       "1,20 Є",
       "0,80 Є",
@@ -451,7 +460,7 @@ const drinks = {
       "0,36 l","0,30 l", "0,30 l", "0,50 l", "0,30 l", "0,50 l"
     ],
     price: [
-      "6,00 Є","5,00 Є", "5,00 Є", "6,50 Є", "8,50 Є", "10,00 Є"
+      "6,00 Є","5,00 Є", "5,50 Є", "7,00 Є", "9,00 Є", "11,00 Є"
     ],
   },
   sweets: {
@@ -462,7 +471,7 @@ const drinks = {
       "Čokoladni kornet / Chocolate Cone",
     ],
     measure: ["kugla/ball", "kugla/ball", "komad/piece", "komad/piece"],
-    price: ["2,60 Є", "3,00 Є", "1,00 Є", "1,70 Є"],
+    price: ["2,80 Є", "3,20 Є", "1,00 Є", "1,70 Є"],
   },
 };
 
@@ -485,7 +494,6 @@ const specialDrinks = {
       "Blue Lagoon",
       "Blue Hawaiian",
       "Caipirinha",
-      "White Russian",
       "Aperol Spritz",
       "Caribbean Cruise",
       "Caribbean Cruise 1L",
@@ -496,6 +504,9 @@ const specialDrinks = {
       "Negroni",
       "Hugo",
       "Espresso Martini",
+      "Paper Plane",
+      "Bebbo",
+      "Zec Scn",
       "Little Engineer",
       "Simply Red",
     ],
@@ -577,7 +588,9 @@ const specialDrinks = {
       ],
       ["gin, campari, sweet vermouth"],
       ["elderflower cordial, mineral water, prosecco, lime, mint leaves"],
-      ["vodka, kahlua, espresso"],
+      ["bourbon whiskey, amaro nonino, aperol, fresh lemon"],
+      ["gin, fresh lemon, fresh orange, honey syrup"],
+      ["tequila bianco, fresh lime, ginger syrup, mineral water, martini rosso"],
       ["grenadine, lime juice, pineapple juice, orange juice"],
       [
         `coconut cream,
@@ -588,33 +601,35 @@ const specialDrinks = {
       ],
     ],
     price: [
+      "12,00 Є",
+      "10,50 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "33,00 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "13,00 Є",
+      "10,50 Є",
+      "13,00 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "33,00 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "12,00 Є",
       "11,50 Є",
-      "10,00 Є",
+      "13,00 Є",
+      "37,00 Є",
+      "13,00 Є",
+      "13,00 Є",
+      "13,00 Є",
+      "37,00 Є",
       "11,50 Є",
-      "11,50 Є",
-      "30,00 Є",
-      "11,50 Є",
-      "11,50 Є",
-      "12,50 Є",
-      "10,00 Є",
-      "12,50 Є",
-      "11,50 Є",
-      "11,50 Є",
-      "30,00 Є",
-      "11,50 Є",
-      "11,50 Є",
-      "11,50 Є",
-      "11,50 Є",
-      "11,00 Є",
-      "12,50 Є",
-      "35,00 Є",
-      "12,50 Є",
-      "12,50 Є",
-      "12,50 Є",
-      "30,00 Є",
-      "11,00 Є",
-      "11,50 Є",
-      "11,50 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "12,00 Є",
+      "12,00 Є",
       "10,00 Є",
       "10,00 Є",
     ],
@@ -628,9 +643,10 @@ const specialDrinks = {
       "Gin Mare",
       "Tanqueray No. 10",
       "Bombay Sapphire",
+      "Old Pilots London Dry",
+      "Tanqueray Blackcurrant Royale",
       "1724 Tonic water",
       "Thomas Henry tonic water",
-      "Thomas Henry Cherry Blossom tonic",
     ],
     measure: [
       "0,03 l",
@@ -639,7 +655,8 @@ const specialDrinks = {
       "0,03 l",
       "0,03 l",
       "0,03 l",
-      "0,2 l",
+      "0,03 l",
+      "0,03 l",
       "0,2 l",
       "0,2 l",
     ],
@@ -650,9 +667,10 @@ const specialDrinks = {
       "8,00 Є",
       "7,50 Є",
       "5,50 Є",
+      "8,00 Є",
+      "8,00 Є",
+      "6,50 Є",
       "6,00 Є",
-      "5,50 Є",
-      "5,50 Є",
     ],
   },
 };
@@ -726,7 +744,7 @@ specialMen.addEventListener("click", function (e) {
       `<img class="menuImg" src="cocktailimgs/0.jpg">
     <p class="specialName">Pina Colada<p>
     <p class="specialDescription">white rum, dark rum, coconut cream, pineapple juice, cream<p>
-    <p class="specialPrice">11,50 Є<p>
+    <p class="specialPrice">12,00 Є<p>
     <div class="navigation">
             <button class="navigationBtn">&#8592;</button>
             <button class="navigationBtn">&#8594;</button>
@@ -761,14 +779,14 @@ specialMen.addEventListener("click", function (e) {
     if (btn === "←") specialCount--;
     if (btn === "→") specialCount++;
     if (categorybtn === "cocktails") {
-      if (specialCount === -1) specialCount = 28;
-      else if (specialCount === 29) specialCount = 0;
+      if (specialCount === -1) specialCount = 30;
+      else if (specialCount === 31) specialCount = 0;
       specialImage.src = `cocktailimgs/${specialCount}.jpg`;
       if (
         specialCount === 4 ||
         specialCount === 12 ||
-        specialCount === 19 ||
-        specialCount === 23
+        specialCount === 18 ||
+        specialCount === 22
       )
         specialImage.src = "";
 
@@ -778,8 +796,8 @@ specialMen.addEventListener("click", function (e) {
       specialPri.textContent = specialDrinks[categorybtn].price[specialCount];
     }
     if (categorybtn === "gins") {
-      if (specialCount === -1) specialCount = 8;
-      else if (specialCount === 9) specialCount = 0;
+      if (specialCount === -1) specialCount = 9;
+      else if (specialCount === 10) specialCount = 0;
       specialImage.src = `ginimgs/${specialCount}.jpg`;
       specialGinNam.textContent = `${
         specialDrinks[categorybtn].name[specialCount]
