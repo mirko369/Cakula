@@ -477,7 +477,7 @@ const drinks = {
       "Čokoladni kornet / Chocolate Cone",
     ],
     measure: ["kugla/ball", "kugla/ball", "komad/piece", "komad/piece"],
-    price: ["2,90 Є", "3,40 Є", "1,00 Є", "1,70 Є"],
+    price: ["3,00 Є", "3,50 Є", "1,00 Є", "1,70 Є"],
   },
 };
 
