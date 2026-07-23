@@ -475,9 +475,11 @@ const drinks = {
       "Sladoled Premium / Ice Cream Premium",
       "Slatki kornet / Sweet Cone",
       "Čokoladni kornet / Chocolate Cone",
+      "Pistacio kornet / Pistacio Cone",
+      "Kakao kornet / Cocoa Cone",
     ],
-    measure: ["kugla/ball", "kugla/ball", "komad/piece", "komad/piece"],
-    price: ["3,00 Є", "3,50 Є", "1,00 Є", "1,70 Є"],
+    measure: ["kugla/ball", "kugla/ball", "komad/piece", "komad/piece", "komad/piece", "komad/piece"],
+    price: ["3,00 Є", "3,50 Є", "1,50 Є", "2,00 Є", "2,20 Є", "2,20 Є"],
   },
 };
 
